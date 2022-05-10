@@ -1,0 +1,28 @@
+### Get all
+GET http://localhost:3000/user
+
+
+### Get One
+GET http://localhost:3000/user/3
+
+
+#### Create User
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name": "Ning Ning"
+}
+
+
+### Delete User
+DELETE http://localhost:3000/user/2
+
+
+### Update User
+PATCH  http://localhost:3000/user/5
+Content-Type: application/json
+
+{
+    "name": "Xiaoting"
+}
