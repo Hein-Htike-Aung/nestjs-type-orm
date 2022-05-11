@@ -11,12 +11,12 @@ POST http://localhost:3000/user
 Content-Type: application/json
 
 {
-    "name": "Ning Ning"
+    "name": "Kazuha"
 }
 
 
 ### Delete User
-DELETE http://localhost:3000/user/2
+DELETE http://localhost:3000/user/6
 
 
 ### Update User

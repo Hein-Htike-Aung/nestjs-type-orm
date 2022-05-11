@@ -1,0 +1,10 @@
+### Create Employee, Contact Info, Task, Meeting
+POST http://localhost:3000/employee
+
+
+### get Employee by id
+GET http://localhost:3000/employee/1
+
+
+### delete Employee 
+DELETE http://localhost:3000/employee/2

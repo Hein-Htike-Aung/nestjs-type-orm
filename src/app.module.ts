@@ -1,17 +1,15 @@
-import { Pet } from './pet.entity';
-import { User } from './user.entity';
+
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import config from '../ormconfig';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { UserModule } from './user/user.module';
+import { EmployeeModule } from './employee/employee.module';
 
 @Module({
   imports: [
     TypeOrmModule.forRoot(config),
-    TypeOrmModule.forFeature([User, Pet])
-  ],
-  controllers: [AppController],
-  providers: [AppService],
+    UserModule,
+    EmployeeModule,
+  ]
 })
 export class AppModule {}
